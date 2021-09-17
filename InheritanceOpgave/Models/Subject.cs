@@ -18,7 +18,7 @@ namespace UddataPLUSPLUS
     }
     class Subject : Person
     {
-        public int Grade { get; set; }
+        public int? Grade { get; set; }
         public Subjects Subjects {  get; set; }
 
     }

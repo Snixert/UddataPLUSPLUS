@@ -13,13 +13,10 @@ namespace UddataPLUSPLUS.Views
             do
             {
                 Console.Clear();
-                Console.WriteLine(
+                Console.Write(
                     "\n1. Add Student\n" +
-                    "2. Show All Students\n" +
-                    "3. Search for Student\n" +
-                    "4. Add Teacher\n" +
-                    "5. Show All Teachers\n" +
-                    "6. Search for Teacher\n"
+                    "2. Add Teacher\n\n" +
+                    "Choose a service from the menu: "
                     );
                 string choice = Console.ReadLine();
 
@@ -30,23 +27,9 @@ namespace UddataPLUSPLUS.Views
                         student.AddStudent();
                         break;
                     case "2":
-
+                        TeacherView teacher = new TeacherView();
+                        teacher.AddTeacher();
                         break;
-                    case "3":
-
-                        break;
-                    case "4":
-
-                        break;
-                    case "5":
-
-                        break;
-                    case "6":
-
-                        break;
-
-                    default:
-                        break; 
                 } 
             } while (true);
         }
